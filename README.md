@@ -1,3 +1,3 @@
-# web-platform-a8yfpn
+# Vokobot
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/web-platform-a8yfpn)
+[Редактировать в StackBlitz ⚡️](https://stackblitz.com/edit/vokobot)
