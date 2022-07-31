@@ -28,6 +28,7 @@ a {
 }
 .header {
   padding: 0 1.75rem;
+  user-select: none;
   justify-content: space-between;
 }
 .header__icon {
@@ -44,18 +45,21 @@ a {
   font-weight: bold;
 }
 .header__links {
-  margin: 0 2rem;
   cursor: pointer;
   font-size: .85rem;
   text-transform: uppercase;
+}
+.header__bot {
+  margin: 0 .75rem;
 }
 .header__container {
   display: flex;
   align-items: center;
   padding: 0 1rem;
 }
-.header__container:hover {
+.header__container:hover, .header__padding:hover {
   background-color: #ffffff10;
+  transition-delay: 50ms
 }
 .header__icon-links img {
   height: 1.1rem;
@@ -69,11 +73,14 @@ a {
   height: 1.1rem;
   margin: .5rem;
 }
-.header__padding:hover {
-  background-color: #ffffff10;
-}
 .header__minilog {
   height: 1rem !important;
+}
+.header__megalog {
+  height: 2rem !important;
+}
+.header__little-log {
+  height: .65rem;
 }
 .header__hr {
   border-left: 1px solid white;
