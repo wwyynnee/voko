@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+:root {
+  --title: #616161;
+  --hover: #ffffff10;
+}
 
 * {
   box-sizing: border-box;
@@ -56,9 +61,10 @@ a {
   display: flex;
   align-items: center;
   padding: 0 1rem;
+  border-radius: 2.5px;
 }
 .header__container:hover, .header__padding:hover {
-  background-color: #ffffff10;
+  background-color: var(--hover);
   transition-delay: 50ms
 }
 .header__icon-links img {

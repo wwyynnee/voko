@@ -1,5 +1,7 @@
 :root {
-  --background-color: #141414;
+  --background-color: #303030;
+  --block-color: #212121
+  --footer-color: #424242;
 }
 html,
 body {

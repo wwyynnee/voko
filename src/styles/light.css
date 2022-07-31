@@ -1,0 +1,9 @@
+:root {
+  --background-color: #fafafa;
+  --text-color: rgba(0, 0, 0, .87);
+}
+html,
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
