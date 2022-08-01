@@ -23,7 +23,7 @@
 }
 html,
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -47,22 +47,27 @@ a {
   cursor: pointer;
 }
 .header {
+  font-family: "Roboto", sans-serif;
   padding: 0 1.75rem;
   user-select: none;
   cursor: auto;
   justify-content: space-between;
 }
-.header__icon {
+.header__icon, .footer__icon {
+  display: flex;
+  align-items: center;
   margin: 0 .5rem;
 }
-.header__icon img {
+.header__icon img, .footer__icon img {
   border-radius: 25px;
   height: 2.5rem;
 }
-.header__name {
+.header__name, .footer__name {
+  display: flex;
+  align-items: center;
   font-size: 1.25rem;
 }
-.header__name p span {
+.header__name p span, .footer__name p span {
   font-weight: bold;
 }
 .header__links {
@@ -79,7 +84,7 @@ a {
   padding: 0 1rem;
   border-radius: 2.5px;
 }
-.header__hover:hover {
+.header__hover:hover, .footer__hover:hover {
   background-color: var(--hover);
   transition-delay: 50ms
 }
@@ -152,4 +157,41 @@ a {
   display: flex;
   height: 100vh;
   width: 100%;
+}
+.footer {
+  width: var(100% - 20rem);
+  margin: 0 10rem;
+}
+.footer__content {
+  display: flex;
+  font-size: .8rem;
+  justify-content: center;
+}
+.footer__container {
+  display: flex;
+}
+.footer__center {
+  align-items: center;
+}
+.footer__container ul a:hover {
+  opacity: .7;
+}
+.footer__container ul {
+  list-style-type: none;
+  font-size: .95rem;
+  margin: 0;
+}
+.footer__padding {
+  display: flex;
+  border-radius: 25px;
+  height: 3rem;
+  width: 3rem;
+  justify-content: center;
+}
+.footer__icon-links {
+  align-self: center;
+}
+.footer__icon-links img {
+  height: 1.25rem;
+  margin: .25rem;
 }
