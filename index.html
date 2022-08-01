@@ -8,6 +8,8 @@
   <link rel="icon" href="src/img/vokobot.webp" />
   <link rel="stylesheet" href="src/styles/style.css" />
   <link rel="stylesheet" href="src/styles/dark.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -26,7 +28,7 @@
         </a>
         <div class="header__links">
           <a href="#">
-            <div class="header__container">
+            <div class="header__container header__hover">
               <div class="header__icon-links">
                 <img src="src/icons/docs.svg" alt />
               </div>
@@ -34,7 +36,7 @@
             </div>
           </a>
           <a href="#">
-            <div class="header__container">
+            <div class="header__container header__hover">
               <div class="header__icon-links">
                 <img src="src/icons/cmds.svg" alt />
               </div>
@@ -42,7 +44,7 @@
             </div>
           </a>
           <a href="#">
-            <div class="header__container">
+            <div class="header__container header__hover">
               <div class="header__icon-links">
                 <img src="src/icons/status.svg" alt />
               </div>
@@ -50,7 +52,7 @@
             </div>
           </a>
           <a href="#">
-            <div class="header__container">
+            <div class="header__container header__hover">
               <div class="header__icon-links">
                 <img src="src/icons/donate.svg" alt />
               </div>
@@ -62,13 +64,13 @@
       <div class="header__content">
         <div class="header__links">
           <a href="#">
-            <div class="header__container header__padding">
+            <div class="header__container header__padding header__hover">
               <div class="header__icon-links">
                 <img src="src/icons/discord.svg" alt />
               </div>
             </div>
           </a>
-          <div class="header__container">
+          <div class="header__container header__hover">
             <div class="header__icon-links">
               <img src="src/icons/login.svg" class="header__minilog" alt />
             </div>
@@ -76,7 +78,8 @@
           </div>
           <div class="header__hr"></div>
         </div>
-        <div class="header__container">
+        <div class="header__container header__column header__content">
+          <div class="header__container header__button header__hover header__active" onclick="openMenu()">
             <div class="header__icon-links">
               <img src="src/icons/lang.svg" class="header__megalog" alt />
             </div>
@@ -87,7 +90,43 @@
         </div>
       </div>
     </div>
+    <div class="header__menu header__shadow">
+      <div class="header__item">
+        <div class="header__object header__hover" onclick="closeMenu()">
+          <div class="header__flag">
+            <img src="src/icons/russia.svg" alt />
+          </div>
+          <div class="header__text-flag">
+            <p>Русский</p>
+          </div>
+        </div>
+        <div class="header__object header__hover" onclick="closeMenu()">
+          <div class="header__flag">
+            <img src="src/icons/usa.svg" alt />
+          </div>
+          <div class="header__text-flag">
+            <p>English</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
+  <main onclick="closeMenu()">
+    <div class="main">
+      <div class="main__item"></div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer">
+      <div class="footer__content">
+        <div class="footer__container"></div>
+      </div>
+      <div class="footer__copyright">
+        <p>© 2022 — Helloy56 | Все права защищены</p>
+      </div>
+    </div>
+  </footer>
+  <script src="src/scripts/script.js" defer></script>
 </body>
 
 </html>
