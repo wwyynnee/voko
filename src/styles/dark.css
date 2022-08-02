@@ -5,10 +5,13 @@
 }
 
 ::-webkit-scrollbar-track {
-  background-color: rgba(0, 0, 0, .4);
+  background-color: var(--background-color);
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--menu-color);
+  background-color: hsla(0, 0%, 100%, .2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsla(0, 0%, 100%, .3);
 }
 
 html,
