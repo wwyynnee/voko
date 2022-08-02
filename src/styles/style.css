@@ -240,10 +240,22 @@ a {
 .main__terms span {
   font-size: .8rem;
 }
-.main__title-terms h3 {
+.main__title-terms {
+  display: flex;
+  align-items: center;
+  height: 1.5rem;
+}
+.main__title-terms a {
+  display: flex;
+  align-items: center;
   cursor: pointer;
-  font-size: 1rem;
   margin: .5rem 0;
+}
+.main__title-terms h3 {
+  font-size: 1rem;
+}
+.main__title-terms img {
+  margin: 0 .2rem;
 }
 .main__text-terms p {
   font-size: .95rem;
@@ -254,7 +266,10 @@ a {
   text-decoration: underline;
 }
 .main__text-terms ol {
-  margin: 0;
+  padding-left: 1.5rem;
+}
+.main__text-terms [type="a"] {
+  margin: 0 0 1rem;
 }
 .header__terms {
   box-shadow: var(--shadow);
