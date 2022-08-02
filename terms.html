@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Vokobot</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="icon" href="src/img/vokobot.webp" />
+  <link rel="stylesheet" href="src/styles/style.css" />
+  <link rel="stylesheet" href="src/styles/dark.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="header header__terms">
+      <div class="header__content">
+        <a href="/">
+          <div class="header__bot">
+            <div class="header__icon">
+              <img src="src/img/vokobot.webp" alt />
+            </div>
+            <div class="header__name">
+              <p><span>Voko</span>bot</p>
+            </div>
+          </div>
+        </a>
+        <div class="header__links">
+          <a href="#">
+            <div class="header__container header__hover">
+              <div class="header__icon-links">
+                <img src="src/icons/docs.svg" alt />
+              </div>
+              <div class="header__text-links">Документация</div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="header__container header__hover">
+              <div class="header__icon-links">
+                <img src="src/icons/cmds.svg" alt />
+              </div>
+              <div class="header__text-links">Команды</div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="header__container header__hover">
+              <div class="header__icon-links">
+                <img src="src/icons/status.svg" alt />
+              </div>
+              <div class="header__text-links">Статистика</div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="header__container header__hover">
+              <div class="header__icon-links">
+                <img src="src/icons/donate.svg" alt />
+              </div>
+              <div class="header__text-links">Поддержите нас</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="header__content">
+        <div class="header__links">
+          <a href="#">
+            <div class="header__hover border">
+              <div class="header__icon-links">
+                <img src="src/icons/discord.svg" alt />
+              </div>
+            </div>
+          </a>
+          <div class="header__container header__hover">
+            <div class="header__icon-links">
+              <img src="src/icons/login.svg" class="header__minilog" alt />
+            </div>
+            <div class="header__text-links">Войти</div>
+          </div>
+          <div class="header__hr"></div>
+        </div>
+        <div class="header__column header__content header__hover">
+          <div class="header__button header__active" onclick="openMenu()">
+            <div class="header__icon-links">
+              <img src="src/icons/lang.svg" class="header__megalog" alt />
+            </div>
+            <div class="header__text-links">
+              <img src="src/icons/down.svg" class="header__little-log" alt />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__menu header__shadow">
+      <div class="header__item">
+        <div class="header__object header__hover" onclick="closeMenu()">
+          <div class="header__flag">
+            <img src="src/icons/russia.svg" alt />
+          </div>
+          <div class="header__text-flag">
+            <p>Русский</p>
+          </div>
+        </div>
+        <div class="header__object header__hover" onclick="closeMenu()">
+          <div class="header__flag">
+            <img src="src/icons/usa.svg" alt />
+          </div>
+          <div class="header__text-flag">
+            <p>English</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main onclick="closeMenu()">
+    <div class="main main__terms">
+      <h1>Условия использования</h1>
+      <div class="main__container-terms">
+        <div class="main__title-terms" id="terms">
+          <h3>1. Введение <a href="#terms"></a></h3>
+        </div>
+        <div class="main__text-terms">
+          <p>Пользуясь веб-сайтом JuniperBot <a href="https://juniper.bot">https://juniper.bot</a> и данным ботом Discord,
+            Вы соглашаетесь соблюдать настоящие условия использования, <a href="https://discord.com/terms"
+              target="_blank">условия использования Discord</a>, все применимые законы и регламенты, а также соглашаетесь
+            с тем, что несёте полную ответственность за соблюдение местного законодательства. Если Вы не согласны с
+            каким-либо из этих условий, Вам запрещается использование данного сайта и связанных с ним ресурсов.
+            Содержащиеся на этом сайте материалы защищены действующим законодательством об авторском праве и товарных
+            знаках.</p>
+        </div>
+      </div>
+      <div class="main__container-terms">
+        <div class="main__title-terms" id="use-license">
+          <h3>2. Соглашение об использовании <a href="#use-license"></a></h3>
+        </div>
+        <div class="main__text-terms">
+          <ol type="a">
+            <li>Разрешается временное получение единственной копии материалов (информации или ПО) на сайте JuniperBot для
+              личного и некоммерческого просмотра. Данное соглашение описывает правила использования, но не передачу права
+              собственности, и в соответствии с этим соглашением Вы не можете:
+              <ol type="i">
+                <li>модифицировать или копировать материалы;</li>
+                <li>использовать материалы в коммерческих целях или для публичного показа (коммерческого или
+                  некоммерческого);</li>
+                <li>пытаться декомпилировать или заниматься обратной разработкой (реверс-инжинирингом) любого ПО,
+                  размещенного на веб-сайте JuniperBot и связанных ресурсах;</li>
+                <li>удалять любые авторские права или другие права собственности из материалов; или</li>
+                <li>передавать материалы третьим лицам или создавать "зеркала" материалов на любом другом сервере.</li>
+              </ol>
+            </li>
+            <li>Это соглашение будет автоматически аннулировано в случае, если Вы нарушите любое из этих ограничений и
+              может быть аннулировано со стороны JuniperBot в любой момент в одностороннем порядке. После прекращения
+              просмотра этих материалов или прекращения действия данного соглашения Вы должны немедленно уничтожить все
+              загруженные материалы, имеющиеся в Вашем распоряжении в электронном или печатном виде.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="main__container-terms">
+        <div class="main__title-terms" id="disclaimer">
+          <h3>3. Отказ от ответственности <a href="#disclaimer"></a></h3>
+        </div>
+        <div class="main__text-terms">
+          <ol type="a">
+            <li>Материалы на веб-сайте JuniperBot предоставлены "как есть", без каких-либо гарантий, выраженных или
+              подразумеваемых, включая, но не ограничиваясь, гарантий пригодности и соответствия конкретной цели и
+              соблюдения прав интеллектуальной собственности.</li>
+            <li>Кроме того, JuniperBot не дает никаких гарантий и не делает никаких заявлений относительно точности,
+              вероятных результатов или надежности использования материалов на веб-сайте, иными связями с данными
+              материалами или на любых ресурсах, связанных с данным сайтом.</li>
+            <li>JuniperBot и его представители не несут ответственности за возможные разрушительные действия ПО на Вашем
+              сервере Discord вследствие невнимательности и/или халатности администрации этого сервера или неправильной
+              настройки функциональности. Все настройки JuniperBot предоставлены "как есть" и их использование допускается
+              исключительно на страх и риск конечных пользователей.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="main__container-terms">
+        <div class="main__title-terms" id="limitations">
+          <h3>4. Ограничения <a href="#limitations"></a></h3>
+        </div>
+        <div class="main__text-terms">
+          <p>JuniperBot и его представители ни при каких условиях не несут ответственности за какие-либо убытки (включая,
+        но не ограничиваясь, убытки от потери данных или прибыли или из-за прерывания работы), возникшие в результате
+        использования или невозможности использования материалов на веб-сайте JuniperBot и связанных с ним ресурсов,
+        даже если JuniperBot или уполномоченный представитель JuniperBot уведомили устно или письменно о возможности
+        такого повреждения. Поскольку в некоторых юрисдикциях не допускаются ограничения подразумеваемых гарантий или
+        ограничения ответственности за косвенный или случайный ущерб, эти ограничения могут на Вас не
+        распространяться.</p>
+        </div>
+      </div>
+      <div class="main__container-terms">
+        <div class="main__title-terms" id="accuracy">
+          <h3>5. Точность материалов <a href="#accuracy"></a></h3>
+        </div>
+        <div class="main__text-terms">
+          <p>Материалы, предоставляемые веб-сайтом JuniperBot, могут содержать технические, типографические или
+        фотографические ошибки. JuniperBot не гарантирует точность, полноту и актуальность предоставляемых материалов.
+        JuniperBot может вносить изменения в материалы, содержащиеся на сайте и ресурсах, в любое время без
+        предварительного уведомления. Однако, JuniperBot не дает никаких обязательств по обновлению данных материалов.</p>
+        </div>
+      </div>
+      <div class="main__container-terms">
+        <div class="main__title-terms" id="links">
+          <h3>6. Ссылки и вложения <a href="#links"></a></h3>
+        </div>
+        <div class="main__text-terms">
+          <p>JuniperBot не проверяет все предоставляемые на данном сайте ссылки и вложения и не несёт ответственности за
+        их содержимое. Возможность добавления любых ссылок и вложений не подразумевает их одобрение JuniperBot.
+        Использование таких ссылок и вложений осуществляется на страх и риск конечного пользователя.</p>
+        </div>
+      </div>
+      <div class="main__container-terms">
+        <div class="main__title-terms" id="modifications">
+          <h3>7. Изменения <a href="#modifications"></a></h3>
+        </div>
+        <div class="main__text-terms">
+          <p>JuniperBot может пересматривать данные условия использования в любое время без предварительного уведомления.
+        Используя данный веб-сайт и связанные с ним ресурсы, Вы соглашаетесь с действующей на данный момент версией
+        условий использования.</p>
+        </div>
+      </div>
+      <div class="main__container-terms">
+        <div class="main__title-terms" id="law">
+          <h3>8. Регулирующее законодательство <a href="#law"></a></h3>
+        </div>
+        <div class="main__text-terms">
+          <p>Данные условия использования регулируются и толкуются в соответствии с законодательством Российской Федерации
+        и Вы безоговорочно подчиняетесь законодательству и исключительной юрисдикции судов этого государства.</p>
+        </div>
+      </div>
+      <p>Данная версия условий использования действует с 2 августа 2022 года.</p>
+    </div>
+    </div>
+  </main>
+  <footer onclick="closeMenu()">
+    <div class="footer footer__terms">
+      <div class="footer__content">
+        <div class="footer__container">
+          <div class="footer__icon">
+            <img src="src/img/vokobot.webp" alt />
+          </div>
+          <div class="footer__name">
+            <p><span>Voko</span>bot</p>
+          </div>
+        </div>
+        <div class="footer__container footer__center">
+          <a href="#">
+            <div class="footer__padding footer__hover">
+              <div class="footer__icon-links">
+                <img src="src/icons/discord.svg" alt />
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="footer__padding footer__hover">
+              <div class="footer__icon-links">
+                <img src="src/icons/patreon.svg" alt />
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="footer__padding footer__hover">
+              <div class="footer__icon-links">
+                <img src="src/icons/boosty.svg" alt />
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="footer__padding footer__hover">
+              <div class="footer__icon-links">
+                <img src="src/icons/vk.svg" alt />
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="footer__padding footer__hover">
+              <div class="footer__icon-links">
+                <img src="src/icons/topgg.png" alt />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="footer__container">
+          <ul>
+            <a href="">
+              <li>Сервер поддержки</li>
+            </a>
+            <a href="#">
+              <li>Документация</li>
+            </a>
+            <a href="#">
+              <li>Команды</li>
+            </a>
+            <a href="#">
+              <li>Обратная связь</li>
+            </a>
+          </ul>
+        </div>
+        <div class="footer__container">
+          <ul>
+            <a href="#">
+              <li>Состояние</li>
+            </a>
+            <a href="#">
+              <li>Пожертвования</li>
+            </a>
+            <a href="https://replit.com/">
+              <li>Powered by Replit</li>
+            </a>
+          </ul>
+        </div>
+        <div class="footer__container">
+          <ul>
+            <a href="terms.html">
+              <li>Условия использования</li>
+            </a>
+            <a href="privacy.html">
+              <li>Конфиденциальность</li>
+            </a>
+            <a href="#">
+              <li>Файлы Cookie</li>
+            </a>
+          </ul>
+        </div>
+        <div class="footer__container footer__center">
+          <div class="footer__hover border">
+            <div class="footer__icon-links">
+              <img src="src/icons/dark.svg" class="footer__megalog" alt />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__content">
+        <p>© 2022 — Helloy56 | Все права защищены</p>
+      </div>
+    </div>
+  </footer>
+  <script src="src/scripts/script.js" defer></script>
+</body>
+
+</html>

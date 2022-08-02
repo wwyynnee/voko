@@ -19,3 +19,11 @@ body {
 .header__menu {
   background-color: var(--menu-color);
 }
+
+/* terms.html */
+.footer__terms {
+  background-color: var(--menu-color);
+}
+.header__terms {
+  background-color: var(--block-color);
+}

@@ -26,6 +26,8 @@ body {
   font-family: sans-serif;
   padding: 0;
   margin: 0;
+  width: 100%;
+  height: 100%;
 }
 a {
   text-decoration: inherit;
@@ -158,8 +160,8 @@ a {
 /* main */
 .main {
   display: flex;
-  height: 100vh;
-  width: 100%;
+  padding: 1rem;
+  flex-direction: column;
 }
 
 /* footer */
@@ -221,4 +223,16 @@ a {
 }
 .footer__megalog {
   height: 2.5rem !important;
+}
+
+/* terms.html */
+.main__terms {
+  margin: 0 83px;
+}
+.main__terms h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.header__terms {
+  box-shadow: var(--shadow);
 }
