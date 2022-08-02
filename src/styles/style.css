@@ -49,7 +49,6 @@ a {
 .header__name,
 .header__links,
 .header__container,
-.header__icon-links,
 .header__content,
 .header__button {
   display: flex;
@@ -89,11 +88,11 @@ a {
   display: flex;
   align-items: center;
   padding: 0 1rem;
-  border-radius: 2.5px;
+  border-radius: 6px;
 }
 .header__hover:hover, .footer__hover:hover {
   background-color: var(--hover);
-  transition-delay: 50ms
+  transition-delay: 50ms;
 }
 .header__shadow {
   box-shadow: var(--shadow);
@@ -132,6 +131,7 @@ a {
   margin: 0 1rem;
   width: 8.5rem;
   right: 0;
+  user-select: n;
   transform-origin: right;
 }
 .header__item {
