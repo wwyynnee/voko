@@ -167,13 +167,15 @@ a {
 /* footer */
 .footer {
   width: 100%;
-  padding: 0 5rem;
   border-radius: 6px 6px 0 0;
+}
+.footer__item {
+  margin: 0 83px;
+  padding: 1.5rem 0;
 }
 .footer__content {
   display: flex;
   font-size: .8rem;
-  padding: .5rem 0;
   justify-content: center;
 }
 .footer__container {
@@ -183,6 +185,7 @@ a {
 .footer__icon {
   display: flex;
   align-items: center;
+  user-select: none;
   margin: 0 .5rem;
 }
 .footer__icon img {
@@ -215,6 +218,7 @@ a {
   justify-content: center;
 }
 .footer__icon-links {
+  user-select: none;
   align-self: center;
 }
 .footer__icon-links img {
@@ -228,10 +232,30 @@ a {
 /* terms.html */
 .main__terms {
   margin: 0 83px;
+  padding: 1.5rem;
 }
 .main__terms h1 {
   font-size: 1.5rem;
   font-weight: 500;
+}
+.main__terms span {
+  font-size: .8rem;
+}
+.main__title-terms h3 {
+  cursor: pointer;
+  font-size: 1rem;
+  margin: .5rem 0;
+}
+.main__text-terms p {
+  font-size: .95rem;
+  margin: 0 0 1rem;
+  line-height: 1.25;
+}
+.main__text-terms a {
+  text-decoration: underline;
+}
+.main__text-terms ol {
+  margin: 0;
 }
 .header__terms {
   box-shadow: var(--shadow);
