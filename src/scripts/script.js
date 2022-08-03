@@ -18,6 +18,8 @@ $("*").on("click", (e) => {
 })
 
 // Смена темы
+$(".");
+
 const btn = document.getElementById("theme-button");
 const link = document.getElementById("theme-link");
 
@@ -41,6 +43,4 @@ const ChangeTheme = () => {
   }
 
   link.setAttribute("href", currTheme);
-
-  Save(theme);
 }

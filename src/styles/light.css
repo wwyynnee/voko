@@ -1,5 +1,7 @@
 :root {
   --background-color: #fafafa;
+  --block-color: #fe0000;
+  --hover: #ffffff30;
   --text-color: rgba(0, 0, 0, .87);
 }
 
@@ -7,6 +9,9 @@
   background-color: var(--background-color);
 }
 ::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, .4);
+}
+::-webkit-scrollbar-thumb:hover {
   background-color: #7d7d7d;
 }
 
@@ -14,4 +19,24 @@ html,
 body {
   background-color: var(--background-color);
   color: var(--text-color);
+}
+.header, .footer {
+  background-color: var(--block-color);
+  color: white;
+}
+.header__menu {
+  background-color: white;
+}
+.header__hover:hover, .footer__hover:hover {
+  background-color: var(--hover);
+  transition-delay: 50ms;
+}
+.header__object:hover {
+  background-color: #66666610;
+  transition-delay: 50ms;
+}
+
+/* terms.html */
+.main__text-terms a {
+  color: var(--block-color);
 }

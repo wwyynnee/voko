@@ -2,6 +2,7 @@
   --background-color: #303030;
   --block-color: #212121;
   --menu-color: #424242;
+  --hover: #ffffff10;
 }
 
 ::-webkit-scrollbar-track {
@@ -21,6 +22,10 @@ body {
 }
 .header__menu {
   background-color: var(--menu-color);
+}
+.header__hover:hover, .footer__hover:hover {
+  background-color: var(--hover);
+  transition-delay: 50ms;
 }
 
 /* terms.html */
