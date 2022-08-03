@@ -8,253 +8,258 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="src/img/vokobot.webp" />
   <link rel="stylesheet" href="src/styles/style.css" />
-  <link rel="stylesheet" href="src/styles/dark.css" />
+  <link rel="stylesheet" href="src/styles/dark.css" id="theme-link" />
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <header>
-    <div class="header header__terms">
-      <div class="header__content">
-        <a href="/">
-          <div class="header__bot">
-            <div class="header__icon">
-              <img src="src/img/vokobot.webp" alt />
-            </div>
-            <div class="header__name">
-              <p><span>Voko</span>bot</p>
-            </div>
-          </div>
-        </a>
-        <div class="header__links">
-          <a href="#">
-            <div class="header__container header__hover">
-              <div class="header__icon-links">
-                <img src="src/icons/docs.svg" alt />
+  <div class="wrapper">
+    <header>
+      <div class="header header__terms">
+        <div class="header__content">
+          <a href="/">
+            <div class="header__bot">
+              <div class="header__icon">
+                <img src="src/img/vokobot.webp" alt />
               </div>
-              <div class="header__text-links">Документация</div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="header__container header__hover">
-              <div class="header__icon-links">
-                <img src="src/icons/cmds.svg" alt />
-              </div>
-              <div class="header__text-links">Команды</div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="header__container header__hover">
-              <div class="header__icon-links">
-                <img src="src/icons/status.svg" alt />
-              </div>
-              <div class="header__text-links">Статистика</div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="header__container header__hover">
-              <div class="header__icon-links">
-                <img src="src/icons/donate.svg" alt />
-              </div>
-              <div class="header__text-links">Поддержите нас</div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="header__content">
-        <div class="header__links">
-          <a href="#">
-            <div class="header__hover border">
-              <div class="header__icon-links">
-                <img src="src/icons/discord.svg" alt />
+              <div class="header__name">
+                <p><span>Voko</span>bot</p>
               </div>
             </div>
           </a>
-          <div class="header__container header__hover">
-            <div class="header__icon-links">
-              <img src="src/icons/login.svg" class="header__minilog" alt />
-            </div>
-            <div class="header__text-links">Войти</div>
-          </div>
-          <div class="header__hr"></div>
-        </div>
-        <div class="header__column header__content header__hover" style="border-radius: 6px;">
-          <div class="header__button header__active">
-            <div class="header__icon-links">
-              <img src="src/icons/lang.svg" class="header__megalog" alt />
-            </div>
-            <div class="header__text-links">
-              <img src="src/icons/down.svg" class="header__little-log" alt />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="header__menu header__shadow">
-      <div class="header__item">
-        <div class="header__object header__hover" onclick="closeMenu()">
-          <div class="header__flag">
-            <img src="src/icons/russia.svg" alt />
-          </div>
-          <div class="header__text-flag">
-            <p>Русский</p>
-          </div>
-        </div>
-        <div class="header__object header__hover" onclick="closeMenu()">
-          <div class="header__flag">
-            <img src="src/icons/usa.svg" alt />
-          </div>
-          <div class="header__text-flag">
-            <p>English</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-  <main onclick="closeMenu()">
-    <div class="main main__terms">
-      <h1>Политика конфиденциальности</h1>
-      <div class="main__container-terms">
-        <div class="main__text-terms">
-          <p>Ваша конфиденциальность очень важна для нас. Эта политика конфиденциальности описывает все персональные
-            данные, собираемые и обрабатываемые нашим проектом, веб-сайтом <a
-              href="https://voko.wwyynnee.repl.co">https://voko.wwyynnee.repl.co</a>, а также другими нашими
-            ресурсами.</p>
-          <p>Мы запрашиваем персональные данные только тогда, когда они действительно необходимы для
-            предоставления заявленной функциональности. Мы собираем их честными и законными способами, с Вашего ведома и
-            согласия. Мы готовы предоставить информацию о том, с какой целью собираются эти данные и как они будут
-            использоваться.</p>
-          <p>Мы храним собранную информацию ровно столько времени, сколько необходимо для
-            предоставления заявленной функциональности. Мы будем защищать Ваши персональные данные коммерчески
-            приемлемыми средствами для предотвращения потери и кражи, а также несанкционированного доступа, разглашения,
-            копирования, использования или изменения.</p>
-          <p>Мы не публикуем Ваши персональные данные и не передаем их
-            третьим лицам за исключением случаев, предусмотренных законодательством.
-          </p>
-          <p>Наш сайт и другие наши ресурсы
-            могут ссылаться на внешние сайты, которые не управляются нами. Пожалуйста, имейте в виду, что мы не
-            контролируем содержимое этих сайтов и не можем принять на себя ответственность за их собственные политики
-            конфиденциальности.</p>
-          <p>Вы можете отклонить наши запросы о предоставлении Ваших персональных данных и при
-            этом Вы должны понимать, что мы не сможем предоставить Вам некоторую зависимую от этих данных
-            функциональность.</p>
-          <p>Вы можете запросить удаление всех данных о Вашем сервере, обратившись на наш <a href="#">сервер
-              поддержки</a> или на <a href="#">почту</a>.</p>
-          <p>Дальнейшее использование нашего проекта, веб-сайта и связанных с ними ресурсов
-            будет рассматриваться как согласие с нашей политикой конфиденциальности. Если у Вас есть какие-либо вопросы
-            о том, как мы обрабатываем пользовательские данные и личную информацию, не стесняйтесь обратиться к нам на
-            сервер поддержки.</p>
-        </div>
-      </div>
-      <span>Данная версия политики конфиденциальности действует с 2 августа 2022 года.</span>
-    </div>
-  </main>
-  <footer onclick="closeMenu()">
-    <div class="footer footer__terms">
-      <div class="footer__item">
-        <div class="footer__content">
-          <div class="footer__container">
-            <div class="footer__icon">
-              <img src="src/img/vokobot.webp" alt />
-            </div>
-            <div class="footer__name">
-              <p><span>Voko</span>bot</p>
-            </div>
-          </div>
-          <div class="footer__container footer__center">
+          <div class="header__links">
             <a href="#">
-              <div class="footer__padding footer__hover">
-                <div class="footer__icon-links">
+              <div class="header__container header__hover">
+                <div class="header__icon-links">
+                  <img src="src/icons/docs.svg" alt />
+                </div>
+                <div class="header__text-links">Документация</div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="header__container header__hover">
+                <div class="header__icon-links">
+                  <img src="src/icons/cmds.svg" alt />
+                </div>
+                <div class="header__text-links">Команды</div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="header__container header__hover">
+                <div class="header__icon-links">
+                  <img src="src/icons/status.svg" alt />
+                </div>
+                <div class="header__text-links">Статистика</div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="header__container header__hover">
+                <div class="header__icon-links">
+                  <img src="src/icons/donate.svg" alt />
+                </div>
+                <div class="header__text-links">Поддержите нас</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="header__content">
+          <div class="header__links">
+            <a href="#">
+              <div class="header__hover border">
+                <div class="header__icon-links">
                   <img src="src/icons/discord.svg" alt />
                 </div>
               </div>
             </a>
-            <a href="#">
-              <div class="footer__padding footer__hover">
-                <div class="footer__icon-links">
-                  <img src="src/icons/patreon.svg" alt />
-                </div>
+            <div class="header__container header__hover">
+              <div class="header__icon-links">
+                <img src="src/icons/login.svg" class="header__minilog" alt />
               </div>
-            </a>
-            <a href="#">
-              <div class="footer__padding footer__hover">
-                <div class="footer__icon-links">
-                  <img src="src/icons/boosty.svg" alt />
-                </div>
+              <div class="header__text-links">Войти</div>
+            </div>
+            <div class="header__hr"></div>
+          </div>
+          <div class="header__column header__content header__hover" style="border-radius: 6px;">
+            <div class="header__button header__active">
+              <div class="header__icon-links header__block-active">
+                <img src="src/icons/lang.svg" class="header__megalog header__block-active" alt />
               </div>
-            </a>
-            <a href="#">
-              <div class="footer__padding footer__hover">
-                <div class="footer__icon-links">
-                  <img src="src/icons/vk.svg" alt />
-                </div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="footer__padding footer__hover">
-                <div class="footer__icon-links">
-                  <img src="src/icons/topgg.png" alt />
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="footer__container">
-            <ul>
-              <a href="">
-                <li>Сервер поддержки</li>
-              </a>
-              <a href="#">
-                <li>Документация</li>
-              </a>
-              <a href="#">
-                <li>Команды</li>
-              </a>
-              <a href="#">
-                <li>Обратная связь</li>
-              </a>
-            </ul>
-          </div>
-          <div class="footer__container">
-            <ul>
-              <a href="#">
-                <li>Состояние</li>
-              </a>
-              <a href="#">
-                <li>Пожертвования</li>
-              </a>
-              <a href="https://replit.com/">
-                <li>Powered by Replit</li>
-              </a>
-            </ul>
-          </div>
-          <div class="footer__container">
-            <ul>
-              <a href="terms.html">
-                <li>Условия использования</li>
-              </a>
-              <a href="privacy.html">
-                <li>Конфиденциальность</li>
-              </a>
-              <a href="#">
-                <li>Файлы Cookie</li>
-              </a>
-            </ul>
-          </div>
-          <div class="footer__container footer__center">
-            <div class="footer__hover border">
-              <div class="footer__icon-links">
-                <img src="src/icons/dark.svg" class="footer__megalog" alt />
+              <div class="header__text-links header__block-active">
+                <img src="src/icons/down.svg" class="header__little-log header__block-active" alt />
               </div>
             </div>
           </div>
         </div>
-        <div class="footer__content">
-          <p>© 2022 — Helloy56 | Все права защищены</p>
+      </div>
+      <div class="header__menu header__shadow">
+        <div class="header__item">
+          <div class="header__object header__hover">
+            <div class="header__flag">
+              <img src="src/icons/russia.svg" alt />
+            </div>
+            <div class="header__text-flag">
+              <p>Русский</p>
+            </div>
+          </div>
+          <div class="header__object header__hover">
+            <div class="header__flag">
+              <img src="src/icons/usa.svg" alt />
+            </div>
+            <div class="header__text-flag">
+              <p>English</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </header>
+    <main>
+      <div class="main main__terms">
+        <h1>Политика конфиденциальности</h1>
+        <div class="main__container-terms">
+          <div class="main__text-terms">
+            <p>Ваша конфиденциальность очень важна для нас. Эта политика конфиденциальности описывает все персональные
+              данные, собираемые и обрабатываемые нашим проектом, веб-сайтом <a
+                href="https://voko.wwyynnee.repl.co">https://voko.wwyynnee.repl.co</a>, а также другими нашими
+              ресурсами.</p>
+            <p>Мы запрашиваем персональные данные только тогда, когда они действительно необходимы для
+              предоставления заявленной функциональности. Мы собираем их честными и законными способами, с Вашего ведома
+              и
+              согласия. Мы готовы предоставить информацию о том, с какой целью собираются эти данные и как они будут
+              использоваться.</p>
+            <p>Мы храним собранную информацию ровно столько времени, сколько необходимо для
+              предоставления заявленной функциональности. Мы будем защищать Ваши персональные данные коммерчески
+              приемлемыми средствами для предотвращения потери и кражи, а также несанкционированного доступа,
+              разглашения,
+              копирования, использования или изменения.</p>
+            <p>Мы не публикуем Ваши персональные данные и не передаем их
+              третьим лицам за исключением случаев, предусмотренных законодательством.
+            </p>
+            <p>Наш сайт и другие наши ресурсы
+              могут ссылаться на внешние сайты, которые не управляются нами. Пожалуйста, имейте в виду, что мы не
+              контролируем содержимое этих сайтов и не можем принять на себя ответственность за их собственные политики
+              конфиденциальности.</p>
+            <p>Вы можете отклонить наши запросы о предоставлении Ваших персональных данных и при
+              этом Вы должны понимать, что мы не сможем предоставить Вам некоторую зависимую от этих данных
+              функциональность.</p>
+            <p>Вы можете запросить удаление всех данных о Вашем сервере, обратившись на наш <a href="#">сервер
+                поддержки</a> или на <a href="#">почту</a>.</p>
+            <p>Дальнейшее использование нашего проекта, веб-сайта и связанных с ними ресурсов
+              будет рассматриваться как согласие с нашей политикой конфиденциальности. Если у Вас есть какие-либо
+              вопросы
+              о том, как мы обрабатываем пользовательские данные и личную информацию, не стесняйтесь обратиться к нам на
+              сервер поддержки.</p>
+          </div>
+        </div>
+        <span>Данная версия политики конфиденциальности действует с 2 августа 2022 года.</span>
+      </div>
+    </main>
+    <footer>
+      <div class="footer footer__terms">
+        <div class="footer__item">
+          <div class="footer__content">
+            <div class="footer__container">
+              <div class="footer__icon">
+                <img src="src/img/vokobot.webp" alt />
+              </div>
+              <div class="footer__name">
+                <p><span>Voko</span>bot</p>
+              </div>
+            </div>
+            <div class="footer__container footer__center">
+              <a href="#">
+                <div class="footer__padding footer__hover">
+                  <div class="footer__icon-links">
+                    <img src="src/icons/discord.svg" alt />
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="footer__padding footer__hover">
+                  <div class="footer__icon-links">
+                    <img src="src/icons/patreon.svg" alt />
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="footer__padding footer__hover">
+                  <div class="footer__icon-links">
+                    <img src="src/icons/boosty.svg" alt />
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="footer__padding footer__hover">
+                  <div class="footer__icon-links">
+                    <img src="src/icons/vk.svg" alt />
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="footer__padding footer__hover">
+                  <div class="footer__icon-links">
+                    <img src="src/icons/topgg.png" alt />
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="footer__container">
+              <ul>
+                <a href="">
+                  <li>Сервер поддержки</li>
+                </a>
+                <a href="#">
+                  <li>Документация</li>
+                </a>
+                <a href="#">
+                  <li>Команды</li>
+                </a>
+                <a href="#">
+                  <li>Обратная связь</li>
+                </a>
+              </ul>
+            </div>
+            <div class="footer__container">
+              <ul>
+                <a href="#">
+                  <li>Состояние</li>
+                </a>
+                <a href="#">
+                  <li>Пожертвования</li>
+                </a>
+                <a href="https://replit.com/">
+                  <li>Powered by Replit</li>
+                </a>
+              </ul>
+            </div>
+            <div class="footer__container">
+              <ul>
+                <a href="terms.html">
+                  <li>Условия использования</li>
+                </a>
+                <a href="privacy.html">
+                  <li>Конфиденциальность</li>
+                </a>
+                <a href="#">
+                  <li>Файлы Cookie</li>
+                </a>
+              </ul>
+            </div>
+            <div class="footer__container footer__center">
+              <div class="footer__hover border">
+                <div class="footer__icon-links">
+                  <img src="src/icons/dark.svg" class="footer__megalog" id="theme-button" alt />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__content">
+            <p>© 2022 — Helloy56 | Все права защищены</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
   <script src="src/scripts/script.js" defer></script>
 </body>
 
