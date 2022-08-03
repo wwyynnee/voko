@@ -284,6 +284,7 @@ a:hover > .main__link-terms {
 .main__text-terms ol, .main__text-terms ul {
   padding-left: 1.5rem;
   line-height: 1.25;
+  font-size: .95rem;
 }
 .main__text-terms code {
   font-family: monospace;
