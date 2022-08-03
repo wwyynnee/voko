@@ -1,14 +1,14 @@
 // Блок выбора языка
 $(".header__menu").hide();
 
-$(".header__active").on("click", () => {
+$(".header__active, .header__icon-links, .header__text-links, .header__megalog, .header__little-log").on("click", () => {
   $(".header__active").css("backgroundColor", "#ffffff10");
   $(".header__active").css("borderRadius", "6px");
   $(".header__menu").toggle();
 })
 
 $("*").on("click", (e) => {
-  if ($(e.target).is(".header__active")) {
+if ($(e.target).is(".header__active, .header__icon-links, .header__text-links, .header__megalog, .header__little-log")) {
     return false;
   }
   $(".header__active").css("backgroundColor", "transparent");
