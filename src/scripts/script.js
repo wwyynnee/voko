@@ -21,9 +21,11 @@ $("*").on("click", (e) => {
 $(".footer__theme-dark").on("click", () => {
   $(".footer__theme-dark").toggleClass("footer__theme-light");
   if ( $(".footer__theme-dark").hasClass("footer__theme-light") ) {
+    $(".data__title-action-3").attr("data-title", "Включить тёмную тему").show();
     $(".footer__theme-dark").attr("src", "src/icons/light.svg").show();
     $(".footer__theme-dark").removeClass("footer__theme-dark");
   } else {
+    $(".data__title-action-3").attr("data-title", "Выключить тёмную тему").show();
     $(".footer__theme-light").attr("src", "src/icons/dark.svg").show();
     $(".footer__theme-light").addClass("footer__theme-dark");
     $(".footer__theme-light").removeClass("footer__theme-light");

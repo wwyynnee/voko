@@ -2,7 +2,8 @@
 
 :root {
   --title: #616161;
-  --shadow: 0 5px 5px -3px rgb(0 0 0 / 20%), 0 8px 10px 1px rgb(0 0 0 / 14%), 0 3px 14px 2px rgb(0 0 0 / 12%);;
+  --shadow: 0 5px 5px -3px rgb(0 0 0 / 20%), 0 8px 10px 1px rgb(0 0 0 / 14%), 0 3px 14px 2px rgb(0 0 0 / 12%);
+  --shadow-2: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
 }
 ::selection {
   background-color: #b3d4fc;
@@ -47,6 +48,32 @@ a {
   height: 2.25rem;
   width: 2.25rem;
   margin: .5rem;
+}
+.data__title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.data__title-action:hover::after, .data__title-action-2:hover::before, .data__title-action-3:hover::before {
+  content: attr(data-title);
+  position: absolute;
+  background: #616161;
+  border-radius: 2px;
+  box-shadow: var(--shadow-2);
+  color: #fff;
+  font-size: 12px;
+  padding: 6px 8px;
+  text-transform: none;
+  width: max-content;
+}
+.data__title-action:hover::after {
+  margin-top: 2.5rem;
+}
+.data__title-action-2:hover::before {
+  margin-top: -2.5rem;
+}
+.data__title-action-3:hover::before {
+  margin-top: -1.75rem;
 }
 
 /* header */
@@ -246,7 +273,7 @@ a:hover > .main__link-terms {
 
 /* terms.html */
 .main__terms {
-  margin: 0 83px;
+  margin: 0 5.188rem;
   padding: 1.5rem;
 }
 .main__terms h1 {
@@ -289,7 +316,7 @@ a:hover > .main__link-terms {
 .main__text-terms code {
   font-family: monospace;
   background-color: #f5f5f5;
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-2);
   color: #bd4147;
   border-radius: 3px;
   display: inline-block;
